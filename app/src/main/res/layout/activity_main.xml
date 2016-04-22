@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.oak.p6_addPrescription.addPill">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/button7"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="เพิ่มยา"
+                android:id="@+id/textView14"
+                android:layout_gravity="center_horizontal" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=".................................................................................................................." />
+
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="วันที่เริ่มทาน:"
+                    android:id="@+id/textView17"
+                    android:layout_weight="1"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="วัน เดือน ปี"
+                    android:id="@+id/textView19"
+                    android:layout_weight="1"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="ตั้งค่าวัน"
+                    android:id="@+id/button8"
+                    android:layout_weight="1"
+                    android:onClick="clickDate" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="ทานถึงวันที่:"
+                    android:id="@+id/textView20"
+                    android:layout_weight="1"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/editText4" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=".................................................................................................................." />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="เตือนครั้งที่ 1 :"
+                    android:id="@+id/textView23"
+                    android:layout_weight="1"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="ไม่เเจ้งเตือน"
+                    android:id="@+id/textView24"
+                    android:layout_weight="1"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="ตั้งเวลา"
+                    android:id="@+id/button10"
+                    android:layout_weight="0.5"
+                    android:onClick="clickTime" />
+
+                <Button
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="ลบเวลา"
+                    android:id="@+id/button"
+                    android:layout_weight="0.5"
+                    android:onClick="resetTime" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="เตือนครั้งที่ 2 :"
+                    android:id="@+id/textView27"
+                    android:layout_weight="1"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="ไม่เเจ้งเตือน"
+                    android:id="@+id/textView28"
+                    android:layout_weight="1"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="ตั้งเวลา"
+                    android:id="@+id/button11"
+                    android:layout_weight="0.5"
+                    android:onClick="clickTime2" />
+
+                <Button
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="ลบเวลา"
+                    android:id="@+id/button3"
+                    android:layout_weight="0.5"
+                    android:onClick="resetTime2"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="เตือนครั้งที่ 3 :"
+                    android:id="@+id/textView29"
+                    android:layout_weight="1"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="ไม่แจ้งเตือน"
+                    android:id="@+id/textView30"
+                    android:layout_weight="1"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="ตั้งเวลา"
+                    android:id="@+id/button12"
+                    android:layout_weight="0.5"
+                    android:onClick="clickTime3" />
+
+                <Button
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="ลบเวลา"
+                    android:id="@+id/button2"
+                    android:layout_weight="0.5"
+                    android:onClick="resetTime3"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="เตือนครั้งที่ 4 :"
+                    android:id="@+id/textView31"
+                    android:layout_weight="1"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="ไม่แจ้งเตือน"
+                    android:id="@+id/textView32"
+                    android:layout_weight="1"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="ตั้งเวลา"
+                    android:id="@+id/button13"
+                    android:layout_weight="0.5"
+                    android:onClick="clickTime4" />
+
+                <Button
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="ลบเวลา"
+                    android:id="@+id/button4"
+                    android:layout_weight="0.5"
+                    android:onClick="resetTime4"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="เตือนครั้งที่ 5 :"
+                    android:id="@+id/textView33"
+                    android:layout_weight="1"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="ไม่เเจ้งเตือน"
+                    android:id="@+id/textView34"
+                    android:layout_weight="1"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="ตั้งเวลา"
+                    android:id="@+id/button14"
+                    android:layout_weight="0.5"
+                    android:onClick="clickTime5" />
+
+                <Button
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="ลบเวลา"
+                    android:id="@+id/button5"
+                    android:layout_weight="0.5"
+                    android:onClick="resetTime5"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=".................................................................................................................." />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+
+                <ListView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/listView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="เพิ่มยา"
+                android:id="@+id/button7"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentBottom="true"
+                android:onClick="setValue" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
